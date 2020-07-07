@@ -10,14 +10,8 @@ class PiscaLed{
 
     public:
 
-        PiscaLed(int pino, long time, long time2);
+        PiscaLed(int pino, long time);
         void acende_led();
-        void acende_led2();
-
-
 };
-
-
-
 
 #endif

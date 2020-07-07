@@ -8,12 +8,11 @@ long _time2;
 int _pino2;
 bool x;
 int cont;
-PiscaLed::PiscaLed(int pino, long time, long time2){
+
+PiscaLed::PiscaLed(int pino, long time){
     pinMode(pino, OUTPUT);
     _pino = pino;
-    _time = time;
-    _time2 = time2;
-    
+    _time = time;   
 
 }
 
@@ -23,14 +22,5 @@ void PiscaLed::acende_led(){
     delay(_time);
     digitalWrite(_pino, LOW);
     delay(_time);
-
 }
-
-void PiscaLed::acende_led2()
-{
-    digitalWrite(_pino, HIGH);
-    delay(_time2);
-    digitalWrite(_pino, LOW);
-    delay(_time2);
-    
-   } 
+ 
